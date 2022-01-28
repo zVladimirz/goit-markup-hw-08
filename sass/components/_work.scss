@@ -1,0 +1,37 @@
+/* <!-- примеры работ --> */
+.work {
+  margin-bottom: 94px;
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+}
+.work-list {
+  flex-wrap: wrap;
+}
+
+.work-list__item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  position: relative;
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+.work-list__titel {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70px;
+
+  padding-top: 27px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--primari-bg-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}

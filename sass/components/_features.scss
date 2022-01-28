@@ -1,0 +1,59 @@
+/* <!-- технологии features--> */
+.features {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.features-list {
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.features-list__item {
+  margin-bottom: 30px;
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: ($desktop - 1)) {
+  .features-list__item:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .features-list__item:nth-child(4n) {
+    margin-right: 0px;
+  }
+}
+
+.features-list__titel {
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--title-text-color);
+  text-transform: uppercase;
+  text-align: left;
+}
+.features-list__text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.features-list__icon {
+  display: flex;
+  // width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  margin-bottom: 30px;
+}
