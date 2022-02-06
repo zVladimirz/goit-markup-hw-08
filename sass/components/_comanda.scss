@@ -56,7 +56,7 @@
     }
   }
   @media screen and (max-width: ($tablet - 1)) {
-    width: 450px;
+    max-width: 450px;
     margin-top: 30px;
     &:first-child {
       margin-top: 0px;

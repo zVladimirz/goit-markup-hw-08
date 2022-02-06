@@ -1,4 +1,5 @@
 .menu-button {
+
   display: inline-flex;
   // margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@
   justify-content: space-between;
   // justify-content: center;
   // align-items: center;
-  z-index: 4;
+  z-index: 10;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #000000;
 
@@ -37,18 +38,25 @@
   display: none;
 }
 
+
+
 .menu-container {
   @media screen and (max-width: ($tablet - 1)) {
     display: none;
-    position: absolute;
-    top: 60px;
+    position: fixed;
+
+    top: 0px;
     left: 0;
     width: 100%;
 
     &.is-open {
-      display: block;
-      background-color: #ffffff;
-      z-index: 9;
+      display: flex;
+      flex-direction: column;
+      height: 796px;
+      justify-content: space-between;
+        justify-content: space-between;
+        background-color: #ffffff;
+      z-index: 5;
     }
   }
 
@@ -73,6 +81,10 @@
     &:last-child {
       margin-bottom: 0px;
     }
+    &:first-child {
+      margin-top: 60px;
+    }
+
   }
   @media screen and (min-width: ($tablet)) {
     &:not(:nth-child(1)) {
@@ -131,7 +143,7 @@
   // padding-top: 21px;
   // padding-bottom: 21px;
   @media screen and (max-width: ($tablet - 1)) {
-    margin-top: 302px;
+    // margin-top: 302px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -220,7 +232,7 @@
 .studio-social-link {
   display: flex;
   margin-left: 40px;
-  margin-top: 64px;
+  // margin-top: 64px;
   margin-bottom: 48px;
 
   font-weight: 500;
@@ -248,4 +260,5 @@
 }
 .studio-social-link__link {
   text-decoration-line: none;
+  color: var(--accent-text-color);
 }

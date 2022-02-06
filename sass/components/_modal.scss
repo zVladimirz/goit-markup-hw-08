@@ -27,15 +27,24 @@
   top: 50%;
   left: 50%;
 
+
+
   @media screen and (min-width: $desktop) {
     min-height: 581px;
     min-width: 528px;
   }
+  @media screen and (max-width: ($mobile - 1)) {
+    min-width: 290px;
+  }
 
-  @media screen and (max-width: ($desktop - 1)) {
+  @media screen and (min-width: $mobile) and (max-width: ($desktop - 1)) {
     min-height: 609px;
     min-width: 450px;
   }
+
+
+
+
   padding: 40px;
 
   background-color: var(--hero-color-title);

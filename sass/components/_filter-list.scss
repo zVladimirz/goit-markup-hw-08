@@ -18,7 +18,7 @@
     margin-left: 0px;
   }
 
-  @media screen and (max-width: ($tablet - 1)) {
+  @media screen  and (min-width: $mobile) and (max-width: ($tablet - 1)) {
     &:nth-last-child(2) {
       margin-left: 0px;
     }
@@ -27,6 +27,26 @@
       margin-top: 15px;
     }
   }
+
+  @media screen  and (max-width: ($portfoliofilter - 1))  {
+    &:nth-child(2n + 1) {
+      margin-left: 0px;
+    }
+
+    &:nth-child(n + 3) {
+      margin-top: 15px;
+    }
+  }
+  @media screen  and (min-width: $portfoliofilter) and (max-width: ($mobile - 1)) {
+    &:nth-child(4) {
+      margin-left: 0px;
+    }
+
+    &:nth-child(n + 4) {
+      margin-top: 15px;
+    }
+  }
+
 }
 
 .filter-list__btn {

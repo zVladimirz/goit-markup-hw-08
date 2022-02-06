@@ -34,12 +34,16 @@
 }
 
 .features-list__titel {
+
   margin-bottom: 10px;
   font-weight: bold;
   line-height: 1.2;
   color: var(--title-text-color);
   text-transform: uppercase;
   text-align: left;
+  @media screen and (max-width: ($tablet - 1)) {
+    text-align: center;
+  }
 }
 .features-list__text {
   margin-top: 0px;
